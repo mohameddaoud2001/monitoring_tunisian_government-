@@ -1,0 +1,5 @@
+# ... other entries ...
+.env
+frontend/node_modules
+frontend/public/build
+static/

@@ -1,0 +1,29 @@
+version: "3.8"
+
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=development
+      - DATABASE_URL=postgresql://postgres:15985212@db:5432/government_monitoring
+      - JWT_SECRET_KEY=your_secret_key_here
+      - SECRET_KEY=your_secret_key_here
+    depends_on:
+      - db
+    volumes:
+      - .:/app  # Mount the project directory for development
+  db:
+    image: postgres:14
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 15985212
+      POSTGRES_DB: government_monitoring
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+volumes:
+  db_data:

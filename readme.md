@@ -209,3 +209,8 @@ Markdown
 
 cd government-project-monitoring
 pytest
+
+
+future improvement:
+
+applying the INS  api (معهد الاحصاء الوطني) if they provide a comprehensive documentation on how to use their api as their website lacks guidance.

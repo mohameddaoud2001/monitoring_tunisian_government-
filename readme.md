@@ -64,39 +64,8 @@ download
 Use code with caution.
 Markdown
 
-government-project-monitoring/
-├── app/ # Backend (Flask API)
-│ ├── init.py # Flask app initialization, blueprints, config
-│ ├── config.py # Configuration settings
-│ ├── errors.py # Custom error handlers
-│ ├── models.py # Database models (SQLAlchemy)
-│ ├── schemas.py # Marshmallow schemas for data validation
-│ ├── services.py # Business logic and data access
-│ ├── utils.py # Utility functions (e.g., sentiment analysis)
-│ └── routes/ # API routes (blueprints)
-│ ├── auth_routes.py # Authentication routes
-│ ├── project_routes.py # Project-related routes
-│ ├── ... # Other routes (region, ministry, etc.)
-├── frontend/ # Frontend (React)
-│ ├── public/ # Static assets (index.html, favicon, etc.)
-│ ├── src/ # Source code for React components
-│ │ ├── components/ # Reusable UI components
-│ │ ├── views/ # Top-level views (pages)
-│ │ ├── App.js # Main application component
-│ │ ├── index.js # Entry point
-│ │ ├── api.js # API communication logic
-│ │ ├── auth.js # Authentication helper functions
-│ │ ├── config.js # Configuration (API endpoints, etc.)
-│ │ └── contexts/ # React Context for state management
-│ ├── package.json # Frontend dependencies
-│ └── ...
-├── migrations/ # Database migration scripts
-├── tests/ # Unit and integration tests
-├── .env # Environment variables
-├── docker-compose.yml # Docker Compose configuration
-├── Dockerfile # Dockerfile for building the application image
-├── requirements.txt # Backend Python dependencies
-└── run.py # Entry point for running the Flask app
+![image](https://github.com/user-attachments/assets/657a1908-f2c7-4823-bbd0-f53ff87b66ad)
+
 
 ## Setup Instructions
 
@@ -225,7 +194,6 @@ government-project-monitoring/
 | PUT    | `/api/v1/expenses/<id>`        | Update an expense                                                             |
 | DELETE | `/api/v1/expenses/<id>`        | Delete an expense                                                             |
 
-**Note:**  This is a basic outline. Refer to the Swagger UI documentation (usually available at `/api/v1/swagger-ui` when the app is running) for detailed information about request/response formats, parameters, and authentication requirements.
 
 ## Security
 
@@ -238,60 +206,6 @@ government-project-monitoring/
 
 ## Testing
 
-The project includes unit tests for the backend API. You can run the tests using:
 
-```bash
 cd government-project-monitoring
 pytest
-content_copy
-download
-Use code with caution.
-Contributing
-
-Contributions to this project are welcome! Please follow these guidelines:
-
-Fork the repository.
-
-Create a new branch for your feature or bug fix: git checkout -b feature/your-feature-name
-
-Make your changes and commit them with clear messages.
-
-Write tests for your changes (if applicable).
-
-Push your branch to your forked repository.
-
-Submit a pull request to the main repository.
-
-License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-Acknowledgments
-
-Flask
-
-React
-
-Material UI
-
-SQLAlchemy
-
-JWT
-
-... (List any other major libraries or frameworks used)
-
-Important Notes:
-
-Placeholders: Replace the placeholders (like <repository_url>, database credentials, secret keys, etc.) with your actual values.
-
-Build Status Badge: If you're using a CI/CD system (like GitHub Actions, Travis CI, Jenkins), generate a build status badge and replace the placeholder badge at the top.
-
-License: Choose an appropriate open-source license (MIT is a common choice) and create a LICENSE file in your repository.
-
-API Documentation: I've included a basic table of API endpoints. Consider generating more comprehensive API documentation using a tool like Swagger/OpenAPI, which can be accessed through the provided Swagger UI endpoint when the application is running.
-
-Customization: This is a template; adapt it to fit the specific details and features of your project. Add or remove sections as needed.
-
-Deployment Instructions: If you have specific deployment instructions (e.g., for deploying to a cloud platform), add a "Deployment" section to your README.
-
-This comprehensive README.md file should provide a solid foundation for your project's documentation. Remember that good documentation is crucial for making your project understandable, usable, and maintainable.

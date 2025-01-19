@@ -39,8 +39,6 @@ def create_app(config_name=None):
     app.config.setdefault('API_VERSION', 'v1')
     app.config.setdefault('OPENAPI_VERSION', '3.0.3')
     app.config.setdefault('OPENAPI_URL_PREFIX', '/api/v1')
-    app.config.setdefault('OPENAPI_SWAGGER_UI_PATH', '/swagger-ui')
-    app.config.setdefault('OPENAPI_SWAGGER_UI_URL', 'https://cdn.jsdelivr.net/npm/swagger-ui-dist/')
 
     # Initialize extensions
     db.init_app(app)

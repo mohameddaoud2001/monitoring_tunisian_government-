@@ -146,6 +146,10 @@ Markdown
         npm install
         ```
 
+![image](https://github.com/user-attachments/assets/2c958714-1e73-4928-afa5-e362b5ee6150)
+
+![image](https://github.com/user-attachments/assets/77008ece-5da8-4a19-a4ab-664def71d40a)
+
     *   **Configure API Base URL (if needed):**
 
         *   Update `API_BASE_URL` in `frontend/src/config.js` if necessary.

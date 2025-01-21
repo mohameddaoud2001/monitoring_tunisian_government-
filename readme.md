@@ -218,3 +218,31 @@ pytest
 future improvement:
 
 applying the INS  api (معهد الاحصاء الوطني) if they provide a comprehensive documentation on how to use their api as their website lacks guidance.
+key value additions for integrating the Tunisia Data Portal API with this project :
+
+1. Economic Context:
+- Enriches projects with relevant economic indicators
+- Provides regional and national context for decision-making
+- Helps validate project budgets against economic trends
+
+2. Validation & Benchmarking:
+- Uses 300+ indicators to validate project metrics
+- Enables automatic flagging of anomalies
+- Provides historical comparisons
+
+3. Enhanced Analytics:
+- Combines project data with national economic indicators
+- Enables predictive analysis using historical trends
+- Provides deeper insights for project planning
+
+4. Time-Series Features:
+- Supports both annual and monthly data analysis
+- Enables trend analysis across different time scales
+- Helps with project timeline planning
+
+5. Data Quality:
+- Cross-validates project data with official statistics
+- Provides automatic quality checks
+- Ensures data consistency across systems
+
+This integration would significantly enhance the transparency and analytical capabilities of this project.

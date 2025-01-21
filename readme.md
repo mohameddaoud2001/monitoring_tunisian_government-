@@ -220,29 +220,25 @@ future improvement:
 applying the INS  api (معهد الاحصاء الوطني) if they provide a comprehensive documentation on how to use their api as their website lacks guidance.
 key value additions for integrating the Tunisia Data Portal API with this project :
 
-1. Economic Context:
-- Enriches projects with relevant economic indicators
-- Provides regional and national context for decision-making
-- Helps validate project budgets against economic trends
+1. Enriched Project Context: Access to 300+ national indicators provides deeper insights for project planning and impact assessment
+2. Data-Driven Insights: Historical time series data helps set realistic targets and measure outcomes
+3. Regional Analysis: Ability to compare project performance against regional development metrics
 
-2. Validation & Benchmarking:
-- Uses 300+ indicators to validate project metrics
-- Enables automatic flagging of anomalies
-- Provides historical comparisons
+Implementation Overview:
+```python
+class TunisiaDataPortalService:
+    # Handles API communication and XML data processing
+    # Provides access to national indicators with monthly/annual granularity
 
-3. Enhanced Analytics:
-- Combines project data with national economic indicators
-- Enables predictive analysis using historical trends
-- Provides deeper insights for project planning
+class ProjectContextEnricher:
+    # Enriches project data with relevant regional/national indicators
+    # Links projects to broader economic and social context
+```
 
-4. Time-Series Features:
-- Supports both annual and monthly data analysis
-- Enables trend analysis across different time scales
-- Helps with project timeline planning
+Integration Points:
+- New API endpoint for enriched project context
+- Enhanced project dashboard with regional statistics
+- Comparative visualizations showing project metrics vs. regional indicators
 
-5. Data Quality:
-- Cross-validates project data with official statistics
-- Provides automatic quality checks
-- Ensures data consistency across systems
 
-This integration would significantly enhance the transparency and analytical capabilities of this project.
+This integration would transform the system from a pure project monitoring tool into a comprehensive platform that connects individual projects to broader national development metrics, enabling better decision-making and impact assessment.
